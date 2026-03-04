@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>About VFSA (EN)</title>
+        <meta name="description" content="">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="png" href="Statics/Assets/Images/VfsaTextLogo.png">
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src=https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+        <script src=https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+          /* Add fallback styles in case JavaScript is disabled */
+          h1 {
+            font-size: 2rem; /* Default size */
+          }
+          p {
+            font-size: 1rem; /* Default size */
+          }
+
+          p {
+            font-family: "Times New Roman";
+          }
+        </style>
+    </head>
+
+    <body class="min-h-screen flex flex-col">
+
+    
+    <!-- Navbar -->
+    <div class="navbar bg-red-600 text-white font-times fixed w-full z-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <!-- Logo Section -->
+      <div class="flex items-center">
+        <img src="Statics/Assets/Images/VfsaTextLogo.png" alt="Logo" class="h-12 w-auto" />
+        <div class="flex items-center justify-center text-center ml-4 gap-x-1">
+          <a href="index.html" id="en" class="hover:bg-red-900 rounded-xl p-2 cursor-pointer">EN</a>
+          <a href="about_Ar.html" id="ar" class="hover:bg-red-900 rounded-xl p-2 cursor-pointer">AR</a>
+        </div>
+      </div>
+  
+      <!-- Hamburger Menu (Mobile) -->
+      <div class="sm:hidden">
+        <button id="menu-toggle" class="text-white focus:outline-none">
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+  
+      <!-- Navbar Links (Hidden on Mobile by Default) -->
+      <div id="menu" class="hidden sm:flex space-x-4 text-[clamp(1rem, 2.5vw, 2rem)]">
+        <a href="Statics/Assets/Files/VFSA brochure.pdf" target="_blank" class="bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700">Download Brochure</a>
+        <a href="index.html" class="rounded px-3 py-2 font-semibold hover:bg-red-700">Home</a>
+        <a href="about_En.html" class="rounded px-3 py-2 font-semibold hover:bg-red-700">About Us</a>
+        <a href="services_En.html" class="rounded px-3 py-2 font-semibold hover:bg-red-700">Services</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUtLuHs7TYlP4DInpZSXgM03FB9VluhB4VXWKo6Mi4sw1UMg/viewform?usp=sf_link" target="_blank" class="rounded px-3 py-2 font-semibold hover:bg-red-700">Apply</a>
+      </div>
+    </div>
+  
+    <!-- Mobile Menu (Dropdown) -->
+    <div id="mobile-menu" class="hidden sm:hidden bg-red-700">
+      <a href="Statics/Assets/Files/VFSA brochure.pdf" target="_blank" class="block text-white py-2 px-4 hover:bg-red-800">Download Brochure</a>
+      <a href="index.html" class="block text-white py-2 px-4 hover:bg-red-800">Home</a>
+      <a href="about_En.html" class="block text-white py-2 px-4 hover:bg-red-800">About Us</a>
+      <a href="services_En.html" class="block text-white py-2 px-4 hover:bg-red-800">Services</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUtLuHs7TYlP4DInpZSXgM03FB9VluhB4VXWKo6Mi4sw1UMg/viewform?usp=sf_link" target="_blank" class="block text-white py-2 px-4 hover:bg-red-800">Apply</a>
+    </div>
+  </div>
+  
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+
+
+
+  <div class="relative bg-red-900 flex flex-col">
+    <!-- Background Image -->
+    <img
+      class="opacity-70 h-screen w-full object-cover"
+      src="Statics/Assets/Images/Hangshake.jpg"
+      alt="Handshake Image"
+    />
+  
+    <!-- TeOverlay -->
+    <div class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50">
+      <div class="grid grid-cols-1 p-3 lg:p-4 sm:p-6 md:p-10 text-white w-full max-w-4xl">
+        <!-- Content Container -->
+        <div class="shadow-lg w-full p-8 mt-10 text-white rounded-lg">
+          <!-- Text Content -->
+          <div class="flex flex-col items-start space-y-4 text-white">
+          <h1 id="dynamic-title" class="font-bold">About Us</h1>
+            <p id="dynamic-paragraph" class="leading-[1.5] lg:text-lg sm:text-lg overflow-hidden text-white">
+              VFSA is a dynamic and expanding company committed to bridging the gap between labor market needs and skilled Egyptian workers. Since its inception, VFSA has been dedicated to responsibly preparing and supplying workers based on realistic assessments of labor demands in various sectors. Founded by a team with substantial international experience, the company possesses a deep understanding of the unique challenges faced by migrant workers, along with the expectations of overseas employers.
+              Our comprehensive service approach begins with a meticulous process of worker selection and extends to ongoing support during early employment stages. This commitment ensures that each worker not only meets employer standards but also receives support in adapting to their new roles, fostering a smooth transition and mutual satisfaction. Our team, trained in all aspects of recruitment, selection, and follow-up, diligently oversees each phase, reflecting our promise to support both workers and employers alike in a sustainable and impactful manner.
+            </p>
+            <div class="w-full border-t border-gray-400 mt-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script>
+    // Initialize FitText.js for dynamic resizing
+    $(document).ready(function () {
+      // Apply FitText.js to the title and paragraph
+      $("#dynamic-title").fitText(1.2); // Adjust the "1.2" for title scaling sensitivity
+      $("#dynamic-paragraph").fitText(2, { minFontSize: '12px', maxFontSize: '20px' }); // Scaling with min/max font size for the paragraph
+    });
+  </script>
+
+
+    
+
+  <div class="grid grid-cols-1 lg:flex sm:flex md:flex p-4 bg-white w-full md:h-400px sm:h-400px lg:h-400px h-600px ">
+    <div class="text-black">
+        <h1 class="text-left lg:text-6xl md:text-4xl sm:text-2xl text-xl text-bold p-5 mt-5 text-bold" >Book An Appointment With Us</h1>
+        <p class="text-left lg:text-4xl md:text-2xl sm:text-xl text-base mr-5 ml-5">
+            We only need to fill out your
+            information on the website to arrange
+            an initial interview, then the access and
+            qualification procedures will proceed to
+            obtain a suitable job opportunity.
+        </p>
+    </div>
+
+    <div class="flex items-center justify-center">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUtLuHs7TYlP4DInpZSXgM03FB9VluhB4VXWKo6Mi4sw1UMg/viewform?usp=sf_link">
+            <img class="responsive-svg hover:animate-wiggle cursor-pointer " src="Statics/Assets/SVGs/calendar_Icon.svg" alt="Calander Svg">
+        </a>
+    </div>
+</div>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-black p-0">
+        <div class="flex flex-wrap items-stretch h-auto">
+
+            <div class="w-full md:w-2/3 p-5 flex flex-col justify-center">
+                <div class="grid grid-rows-3 gap-6 text-white">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="text-left">
+                            <h1 class="font-bold text-3xl md:text-4xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">Contact Us</h1>
+                            <p class="text-lg">Get the latest updates by following us on social media. if you have any questions feel free to call us or emails us at the following: </p>
+                        </div>
+                        <div class="text-right">
+                            <!-- <h1 class="font-bold text-3xl md:text-4xl">تواصل معنا</h1>
+                            <p class="text-lg">احصل على آخر التحديثات من خلال متابعتنا في منصات التواصل الاجتماعي.</p> -->
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1  text-left">
+                        <h3>info@vfsa.site</h3>
+                        <h3>www.vfsa.site</h3>
+                        <h3>🇪🇬(+20) 554911365</h3>
+                        <h3>🇬🇷(+30) 6955967553</h3>
+                    </div>
+
+                    <div class="flex justify-center items-center flex-wrap">
+                        <a class="px-4 text-lg hover:text-indigo-500" href="TOS_En.html" target="_blank">Terms Of Service</a>
+                        <h2>|</h2>
+                        <a class="px-4 text-lg hover:text-indigo-500" href="PrivacyPolicy_En.html" target="_blank">Privacy Policy</a>
+                        <h2>|</h2>
+                        <h3 class="px-4 text-lg">Copyright 2024 ©</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/3 p-5">
+                <iframe class="h-full w-full rounded-xl" src="https://www.google.com/maps/embed?..."></iframe>
+            </div>
+        </div>
+    </footer>
+
+
+    </body>
+</html>

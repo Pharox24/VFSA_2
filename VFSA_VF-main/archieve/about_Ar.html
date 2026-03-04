@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>من نحن</title>
+        <meta name="description" content="">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="Statics/Staylising/CSS/Style.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="png" href="Statics/Assets/Images/VfsaTextLogo.png">
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+          /* Add fallback styles in case JavaScript is disabled */
+          h1 {
+            font-size: 2rem; /* Default size */
+          }
+          p {
+            font-size: 1rem; /* Default size */
+          }
+
+          p {
+            font-family: "Times New Roman";
+          }
+        </style>
+    </head>
+
+    <body>
+
+    
+    <!-- Navbar -->
+    <div class="navbar bg-red-600 text-white font-times fixed w-full z-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <!-- Logo Section -->
+      <div class="flex items-center">
+        <img src="Statics/Assets/Images/VfsaTextLogo.png" alt="Logo" class="h-12 w-auto" />
+        <div class="flex items-center justify-center text-center ml-4 gap-x-1">
+          <a href="about_En.html" id="en" class="hover:bg-red-900 rounded-xl p-2 cursor-pointer">EN</a>
+          <a href="about_Ar.html" id="ar" class="hover:bg-red-900 rounded-xl p-2 cursor-pointer">AR</a>
+        </div>
+      </div>
+  
+      <!-- Hamburger Menu (Mobile) -->
+      <div class="sm:hidden">
+        <button id="menu-toggle" class="text-white focus:outline-none">
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+  
+      <!-- Navbar Links (Hidden on Mobile by Default) -->
+      <div id="menu" class="hidden sm:flex space-x-4 text-[clamp(1rem, 2.5vw, 2rem)]">
+        <a href="#" class="bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700">تحميل المنشور</a>
+        <a href="home_Ar.html" class="rounded px-3 py-2 font-semibold hover:bg-red-700">الصفحة الرئيسية</a>
+        <a href="about_Ar.html" class="rounded px-3 py-2 font-semibold hover:bg-red-700">من نحن</a>
+        <a href="services_Ar.html" class="rounded px-3 py-2 font-semibold hover:bg-red-700">الخدمات</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUtLuHs7TYlP4DInpZSXgM03FB9VluhB4VXWKo6Mi4sw1UMg/viewform?usp=sf_link" target="_blank" class="rounded px-3 py-2 font-semibold hover:bg-red-700">قدم الآن</a>
+      </div>
+    </div>
+  
+    <!-- Mobile Menu (Dropdown) -->
+    <div id="mobile-menu" class="hidden sm:hidden bg-red-700 text-right">
+        <a href="/Statics/Assets/Files/VFSA brochure.pdf" target="_blank" class="block text-white py-2 px-4 hover:bg-red-800">تحميل المنشور</a>
+        <a href="home_Ar.html" class="block text-white py-2 px-4 hover:bg-red-800">الصفحة الرئيسية</a>
+      <a href="about_Ar.html" class="block text-white py-2 px-4 hover:bg-red-800">من نحن</a>
+      <a href="services_Ar.html" class="block text-white py-2 px-4 hover:bg-red-800">الخدمات</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUtLuHs7TYlP4DInpZSXgM03FB9VluhB4VXWKo6Mi4sw1UMg/viewform?usp=sf_link" target="_blank" class="block text-white py-2 px-4 hover:bg-red-800">قدم الآن</a>
+    </div>
+  </div>
+  
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+
+
+
+  <div class="relative bg-red-900 flex flex-col">
+    <!-- Background Image -->
+    <img
+      class="opacity-70 h-screen w-full object-cover"
+      src="Statics/Assets/Images/Hangshake.jpg"
+      alt="Handshake Image"
+    />
+  
+    <!-- Text Overlay -->
+    <div class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50">
+      <div class="grid grid-cols-1  text-white w-full max-w-4xl">
+        <!-- Content Container -->
+        <div class="w-full lg:p-5 lg:mt-5 text-white rounded-lg">
+          <!-- Text Content -->
+          <div class="flex flex-col p-10 text-right text-white">
+          <h1 id="" class="font-bold text-right text-lg md:text-6xl text-4xl sm:text-4xl lg:text-6xl ">من نحن</h1>
+            <p id="" class="md:text-4xl lg:text-5xl sm:text-3xl text-2xl text-right overflow-hidden mt-3 lg:mt-3">
+              شركة VFSA هي شركة ديناميكية ومزدهرة ملتزمة بسد الفجوة بين احتياجات سوق العمل والعمال المصريين المهرة. منذ تأسيسها، كرست VFSA جهودها لإعداد العمال بشكل مسؤول وتزويدهم بناءً على تقييمات واقعية لاحتياجات سوق العمل في مختلف القطاعات. تأسست الشركة على يد فريق يمتلك خبرة دولية واسعة، مما منحها فهماً عميقاً للتحديات الفريدة التي يواجهها العمال المهاجرون، بالإضافة إلى توقعات أصحاب العمل في الخارج.
+            </p>
+            <div class="w-full border-t border-gray-400 mt-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script>
+    // Initialize FitText.js for dynamic resizing
+    $(document).ready(function () {
+      // Apply FitText.js to the title and paragraph
+      $("#dynamic-title").fitText(1.2); // Adjust the "1.2" for title scaling sensitivity
+      $("#dynamic-paragraph").fitText(2, { minFontSize: '12px', maxFontSize: '20px' }); // Scaling with min/max font size for the paragraph
+    });
+  </script>
+
+
+    
+
+  <div class="grid grid-cols-1 lg:flex sm:flex md:flex p-4 bg-white w-full md:h-400px sm:h-400px lg:h-400px h-500px ">
+
+    <div class="text-black text-right mt-3 lg:mt-10 md:mt-2 sm:mt-5">
+      <h1 class="text-2xl lg:text-6xl lg:mt-5 md:text-6xl sm:text-4xl text-xl text-bold p-5 mt-5 text-bold" >حجز موعد معنا</h1>
+      <p class="text-xl lg:text-4xl md:text-4xl sm:text-3xl text-base mr-3 ml-3 lg:mx-4">
+          نحتاج فقط إلى تعبئة معلوماتك على الموقع لترتيب مقابلة أولية، ثم ستتم إجراءات الوصول والتأهيل للحصول على فرصة عمل مناسبة.
+      </p>
+    </div>
+
+    <div class="flex items-center justify-center">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUtLuHs7TYlP4DInpZSXgM03FB9VluhB4VXWKo6Mi4sw1UMg/viewform?usp=sf_link">
+            <img class="responsive-svg hover:animate-wiggle cursor-pointer " src="Statics/Assets/SVGs/calendar_Icon.svg" alt="Calander Svg">
+        </a>
+    </div>
+
+</div>
+
+
+    <!-- Footer -->
+    <footer class="bg-black p-0">
+        <div class="flex flex-wrap items-stretch h-auto">
+
+            <div class="w-full md:w-1/3 p-5">
+                <iframe class="h-full w-full rounded-xl" src="https://www.google.com/maps/embed?..."></iframe>
+            </div>
+
+            <div class="w-full md:w-2/3 p-5 flex flex-col justify-center">
+                <div class="grid grid-rows-3 gap-6 text-white">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        
+                        <div class="text-left">
+                            <!--
+                            <h1 class="font-bold text-3xl md:text-4xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">Contact Us</h1>
+                            <p class="text-lg">Get the latest updates by following us on social media. if you have any questions feel free to call us or emails us at the following: </p>
+                            -->
+                        </div>
+                        
+                        <div class="text-right">
+                            <h1 class="font-bold text-3xl md:text-4xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">تواصل معنا</h1>
+                            <p class="text-xl">احصل على آخر التحديثات من خلال متابعتنا في منصات التواصل الاجتماعي.</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 text-right">
+                        <h3>info@vfsa.site</h3>
+                        <h3>www.vfsa.site</h3>
+                        <h3>🇪🇬(+20) 554911365</h3>
+                        <h3>🇬🇷(+30) 6955967553</h3>
+                    </div>
+
+                    <div class="flex justify-center items-center flex-wrap">
+                        <h3 class="px-4 text-lg">©حقوق النشر  ٢٠٢٤</h3>
+                        <h2>|</h2>
+                        <a class="px-4 text-lg hover:text-indigo-500" href="TOS_Ar.html" target="_blank">شروط الخدمة</a>
+                        <h2>|</h2>
+                        <a class="px-4 text-lg hover:text-indigo-500" href="PrivacyPolicy_Ar.html" target="_blank">سياسة الخصوصية</a>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
+    </body>
+</html>

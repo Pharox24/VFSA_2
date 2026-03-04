@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- ========== IMPROVED HERO SECTION - IMAGE FIXED ========== -->
+<section class="relative w-full h-[70vh] min-h-[600px] overflow-hidden bg-black">
+    <!-- Background Image - Simplified like your working version -->
+    <div class="absolute inset-0">
+        <img src="Statics/Assets/Images/GrayBuildingsModern.jpg" 
+             class="w-full h-full object-cover opacity-60" 
+             alt="Modern City Skyline">
+        
+        <!-- Gradient Overlays (separate from image) -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-red-900/60 to-red-800/40 mix-blend-overlay"></div>
+    </div>
+    
+    <!-- Animated floating particles -->
+    <div class="absolute inset-0 opacity-30">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-red-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-red-600/20 rounded-full blur-3xl animate-pulse animation-delay-2000"></div>
+    </div>
+
+    <!-- Subtle Grid Pattern -->
+    <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0" style="background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 60px 60px;"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
+        
+        <!-- Top Badge -->
+        <div class="flex items-center gap-3 mb-6 animate-fade-in-down">
+            <span class="inline-block w-12 h-0.5 bg-red-600/60"></span>
+            <span class="inline-flex items-center gap-2 px-6 py-2 bg-red-600/10 backdrop-blur-sm text-white text-sm font-semibold tracking-wider rounded-full border border-red-600/30 shadow-xl">
+                <svg class="w-4 h-4 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812z" clip-rule="evenodd"/>
+                </svg>
+                <span>SINCE 1995</span>
+            </span>
+            <span class="inline-block w-12 h-0.5 bg-red-600/60"></span>
+        </div>
+        
+        <!-- Main Heading -->
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 animate-fade-in-up">
+            <span class="text-white">About</span>
+            <span class="text-red-600"> VFSA</span>
+        </h1>
+        
+        <!-- Underline -->
+        <div class="w-32 h-1 bg-red-600 rounded-full mb-8 animate-fade-in-up animation-delay-200"></div>
+        
+        <!-- Description -->
+        <p class="text-xl md:text-2xl text-gray-300 max-w-3xl leading-relaxed animate-fade-in-up animation-delay-400">
+            Bridging Egyptian talent with global opportunities for over 25 years
+        </p>
+
+        <!-- Quick Stats -->
+        <div class="flex flex-wrap justify-center gap-4 mt-12 animate-fade-in-up animation-delay-600">
+            <div class="flex items-center gap-2 bg-white/5 backdrop-blur-sm px-4 py-2 rounded-full border border-white/10">
+                <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                <span class="text-white/90 text-sm">5000+ Workers</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white/5 backdrop-blur-sm px-4 py-2 rounded-full border border-white/10">
+                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                <span class="text-white/90 text-sm">15+ Countries</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white/5 backdrop-blur-sm px-4 py-2 rounded-full border border-white/10">
+                <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+                <span class="text-white/90 text-sm">98% Success</span>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2">
+            <span class="text-white/50 text-xs tracking-widest uppercase animate-fade-in-down">Scroll</span>
+            <div class="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
+                <div class="w-1 h-2 bg-red-600 rounded-full mt-2 animate-scroll-indicator"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Gradient -->
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/50 to-transparent"></div>
+</section>
+
+<style>
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scrollIndicator {
+    0% { transform: translateY(0); opacity: 1; }
+    75% { transform: translateY(15px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+}
+
+.animate-fade-in-down {
+    animation: fadeInDown 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-scroll-indicator {
+    animation: scrollIndicator 2s ease-in-out infinite;
+}
+
+.animate-pulse {
+    animation: pulse 3s ease-in-out infinite;
+}
+
+.animation-delay-200 { animation-delay: 200ms; }
+.animation-delay-400 { animation-delay: 400ms; }
+.animation-delay-600 { animation-delay: 600ms; }
+.animation-delay-2000 { animation-delay: 2000ms; }
+
+.backdrop-blur-sm {
+    backdrop-filter: blur(8px);
+}
+
+/* Ensure particles don't block content */
+.absolute.inset-0 {
+    pointer-events: none;
+}
+</style>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

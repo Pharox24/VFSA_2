@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>VFSA Service (EN)</title>
+        <meta name="description" content="">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="png" href="Statics/Assets/Images/VfsaTextLogo.png">
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+
+        <style>
+            h1 {
+                font-family: "Montserrat", sans-serif;
+            }
+
+            p, li {
+              font-family: "Time New Roman", sans-serif;
+            }
+        </style>
+    </head>
+
+    <body>
+
+    
+    <!-- Navbar -->
+    <div class="navbar bg-red-600 text-white font-times fixed w-full z-20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <!-- Logo Section -->
+      <div class="flex items-center">
+        <img src="Statics/Assets/Images/VfsaTextLogo.png" alt="Logo" class="h-12 w-auto" />
+        <div class="flex items-center justify-center text-center ml-4 gap-x-1">
+          <a href="index.html" id="en" class="hover:bg-red-900 rounded-xl p-2 cursor-pointer">EN</a>
+          <a href="services_Ar.html" id="ar" class="hover:bg-red-900 rounded-xl p-2 cursor-pointer">AR</a>
+        </div>
+      </div>
+  
+      <!-- Hamburger Menu (Mobile) -->
+      <div class="sm:hidden">
+        <button id="menu-toggle" class="text-white focus:outline-none">
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+  
+      <!-- Navbar Links (Hidden on Mobile by Default) -->
+      <div id="menu" class="hidden sm:flex space-x-4 text-[clamp(1rem, 2.5vw, 2rem)]">
+        <a href="Statics/Assets/Files/VFSA brochure.pdf" target="_blank" class="bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700">Download Brochure</a>
+        <a href="index.html" class="rounded home-3 py-2 font-semibold hover:bg-red-700">Home</a>
+        <a href="about_En.html" class="rounded px-3 py-2 font-semibold hover:bg-red-700">About Us</a>
+        <a href="services_En.html" class="rounded px-3 py-2 font-semibold hover:bg-red-700">Services</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUtLuHs7TYlP4DInpZSXgM03FB9VluhB4VXWKo6Mi4sw1UMg/viewform?usp=sf_link" target="_blank" class="rounded px-3 py-2 font-semibold hover:bg-red-700">Apply</a>
+      </div>
+    </div>
+  
+    <!-- Mobile Menu (Dropdown) -->
+    <div id="mobile-menu" class="hidden sm:hidden bg-red-700">
+      <a href="Statics/Assets/Files/VFSA brochure.pdf" target="_blank" class="block text-white py-2 px-4 hover:bg-red-800">Download Brochure</a>
+      <a href="index.html" class="block text-white py-2 px-4 hover:bg-red-800">Home</a>
+      <a href="about_En.html" class="block text-white py-2 px-4 hover:bg-red-800">About Us</a>
+      <a href="services_En.html" class="block text-white py-2 px-4 hover:bg-red-800">Services</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUtLuHs7TYlP4DInpZSXgM03FB9VluhB4VXWKo6Mi4sw1UMg/viewform?usp=sf_link" target="_blank" class="block text-white py-2 px-4 hover:bg-red-800">Apply</a>
+    </div>
+  </div>
+  
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+
+
+    <!-- Our Services-->
+    <div class="relative bg-black">
+        <!-- Background Image -->
+        <img class="h-screen w-full object-cover opacity-30" src="Statics/Assets/Images/TeamworkGroup.jpg" alt="A Group of diverse people holding hands in a meeting">
+    
+        <!-- Text Overlay -->
+        <div class="absolute inset-0 flex justify-center items-center">
+            <!-- The Process In lay View With SVGS and Text Explanations-->
+                <div class="text-white mx-5 sm:mx-6 lg:mx-12 md:mx-8 ">
+                    <h1 class="mb-4 text-2xl text-bold lg:text-6xl md:text-4xl sm:text-2xl ">Our Services</h1>
+                    <ul class="text-xl lg:text-3xl md:text-xl sm:text-base" style="font-family: 'Times New Roman">
+                        <li>Receiving employment applications for those wishing to obtain a job opportunity abroad.</li>
+                        <li>Directing them to training institutions to qualify them and prepare them to suit the jobs they seek.</li>
+                        <li>Contracting them (if necessary) with training organizations to receive training courses that will help them in their practical journey outside the country.</li>
+                        <li>Follow up and receive employment contracts with employers that need all kinds of Egyptian workers.</li>
+                        <li>Coordinating between workers and employers and arranging interview dates at embassies until obtaining a travel visa.</li>
+                        <li>Following up on workers after they travel for three months to ensure their suitability for work and the credibility of employers.</li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    
+
+    <!-- Work & Fileds View -->
+    <div class="bg-black pt-10 pb-10 px-3">
+        <!-- Grid for Work Destinations and Work Fields -->
+        <div class="grid md:grid-cols-2 gap-16 max-w-6xl mx-auto">
+            
+            <!-- Work Destinations Card -->
+            <div class="p-5 text-white border-2 border-white rounded-2xl">
+                <div class="flex items-center space-x-4">
+                    <!-- SVG Image -->
+                    <img src="Statics/Assets/SVGs/earth.svg" class="h-20 w-20" alt="Earth Icon">
+                    
+                    <!-- Titles -->
+                    <div>
+                        <h1 class="text-left text-3xl font-semibold">Work Destinations</h1>
+                    </div>
+                </div>
+    
+                <!-- Destinations List -->
+                <div class="grid grid-cols-2 gap-6 mt-4">
+                    <!-- English List -->
+                    <ul class="text-left space-y-1 lg:text-2xl md:text-xl sm:text-lg text-lg">
+                        <li>🇷🇴 Romania</li>
+                        <li>🇬🇷 Greece</li>
+                        <li>🇭🇺 Hungary</li>
+                        <li>🇵🇱 Poland</li>
+                        <li>🇮🇹 Italy</li>
+                        <li>🇫🇷 France</li>
+                        <li>🇪🇸 Spain</li>
+                        <li>🇩🇪 Germany</li>
+                        <li>🇨🇦 Canada</li>
+                        <li>🇺🇸 USA</li>
+                        <li>🌎 And other countries</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Work Fields Card -->
+            <div class="p-5 text-white border-2 border-white rounded-2xl">
+                <div class="flex items-center space-x-4">
+                    <!-- SVG Image -->
+                    <img src="Statics/Assets/SVGs/gear.svg" class="h-20 w-20" alt="Gear Icon">
+                    
+                    <!-- Titles -->
+                    <div class="text-right">
+                        <h1 class="text-3xl font-semibold">Work Fields</h1>
+                    </div>
+                </div>
+    
+                <!-- Fields List -->
+                <div class="grid grid-cols-2 gap-6 mt-4">
+                    <!-- English List -->
+                    <ul class="text-left space-y-1 lg:text-2xl md:text-xl sm:text-lg text-lg">
+                        <li>Construction worker</li>
+                        <li>Factory worker</li>
+                        <li>Landscaper</li>
+                        <li>Cleaner</li>
+                        <li>Agricultural laborer</li>
+                        <li>Truck driver</li>
+                        <li>Carpenter</li>
+                        <li>Painter</li>
+                        <li>Bankers</li>
+                        <li>Office employees</li>
+                        <li>And other works</li>
+                    </ul>
+                </div>
+            </div>
+    
+        </div>
+
+
+    </div>
+    
+
+
+
+     <!-- Last Service Message -->
+      <div class="relative bg-red-500 ">
+        <img class="h-screen w-full object-cover opacity-40" src="Statics/Assets/Images/CoffeeMeeting.jpg" alt="Meeting Background Image">
+
+        <div class="absolute inset-0 flex-rows justify-center mt-10 text-white">
+                <p class="text-xl lg:text-4xl md:text-3xl sm:text-2xl text-bold p-5 m-10 text-left " style="font-family: 'Times New Roman">
+                    The company seeks to search for and arrange job opportunities in the global labor market,
+                    whether in the Arab countries, the European Union countries, and also in America, Canada,
+                    and the Far East. This depends on the efforts and desires of our workers, so the company’s
+                    work team seeks to be present in the labor market by obtaining the requests and needs of
+                    factories and companies. Farms and major international companies around the world provide
+                    these opportunities to our clients who are job seekers
+                    This requires our company to sign ongoing contracts with international companies, and
+                    factories, as well as a presence in embassies for the same goal, so that everything is official,
+                    far from any risks for any of the parties.
+                </p>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="bg-black p-0">
+        <div class="flex flex-wrap items-stretch h-auto">
+
+            <div class="w-full md:w-2/3 p-5 flex flex-col justify-center">
+                <div class="grid grid-rows-3 gap-6 text-white">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="text-left">
+                            <h1 class="font-bold text-3xl md:text-4xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">Contact Us</h1>
+                            <p class="text-lg">Get the latest updates by following us on social media. if you have any questions feel free to call us or emails us at the following: </p>
+                        </div>
+                        <div class="text-right">
+                            <!-- <h1 class="font-bold text-3xl md:text-4xl">تواصل معنا</h1>
+                            <p class="text-lg">احصل على آخر التحديثات من خلال متابعتنا في منصات التواصل الاجتماعي.</p> -->
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1  text-left">
+                        <h3>info@vfsa.site</h3>
+                        <h3>www.vfsa.site</h3>
+                        <h3>🇪🇬(+20) 554911365</h3>
+                        <h3>🇬🇷(+30) 6955967553</h3>
+                    </div>
+
+                    <div class="flex justify-center items-center flex-wrap">
+                        <a class="px-4 text-lg hover:text-indigo-500" href="TOS_En.html" target="_blank">Terms Of Service</a>
+                        <h2>|</h2>
+                        <a class="px-4 text-lg hover:text-indigo-500" href="PrivacyPolicy_En.html" target="_blank">Privacy Policy</a>
+                        <h2>|</h2>
+                        <h3 class="px-4 text-lg">Copyright 2024 ©</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/3 p-5">
+                <iframe class="h-full w-full rounded-xl" src="https://www.google.com/maps/embed?..."></iframe>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>
