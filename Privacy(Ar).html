@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VFSA للتوظيف الخارجي · سياسة الخصوصية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Font for Arabic (Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* subtle animations & consistency with VFSA brand */
+        .hover-lift:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.02);
+        }
+        .policy-highlight {
+            border-right: 4px solid #dc2626; /* Changed to right for RTL */
+            border-left: none;
+            background-color: #fef2f2;
+        }
+        @media print {
+            .no-print { display: none; }
+            body { color: #000; background: #fff; }
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        /* custom style for data type table */
+        .data-table tr {
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .data-table tr:last-child {
+            border-bottom: none;
+        }
+        /* RTL specific adjustments */
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+        .pl-14 {
+            padding-right: 3.5rem; /* 56px */
+            padding-left: 0;
+        }
+        .lg\:col-span-1 {
+            order: 2;
+        }
+        .lg\:col-span-3 {
+            order: 1;
+        }
+        ul.list-disc, ul.list-inside {
+            padding-right: 1.5rem;
+            padding-left: 0;
+        }
+        .data-table {
+            text-align: right;
+        }
+        .data-table th:first-child, .data-table td:first-child {
+            text-align: right;
+        }
+        .mr-2 {
+            margin-left: 0.5rem;
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased" style="font-family: 'Cairo', sans-serif;">
+
+<!-- ======== HEADER (with VFSA logo integration) ======== -->
+<header class="bg-white shadow-sm sticky top-0 z-30 no-print">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-3">
+            <!-- Logo Section (using provided path) -->
+            <div class="flex items-center">
+                <a href="Home(Ar).html" class="flex items-center space-x-2 ml-4"> <!-- Changed margin for RTL -->
+                    <img src="Statics/Assets/Images/VfsaTextLogo.png" 
+                         alt="VFSA للتوظيف الخارجي" 
+                         class="h-12 w-auto object-contain">
+                </a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="text-gray-500 hover:text-red-600 transition"><i class="fas fa-user"></i> بوابة المستخدم</a>
+                <a href="#" class="bg-red-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-red-700 transition shadow-md">اتصل بنا</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ======== PRIVACY POLICY PAGE ======== -->
+<main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 max-w-6xl">
+    
+    <!-- Hero / page title (matching VFSA brand style) -->
+    <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 bg-red-100 text-red-800 px-5 py-2 rounded-full text-sm font-semibold mb-4">
+            <i class="fas fa-lock"></i> حماية البيانات والشفافية
+        </div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4">سياسة <span class="text-red-600">الخصوصية</span></h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">كيف تقوم VFSA للتوظيف الخارجي بجمع واستخدام وحماية معلوماتك الشخصية.</p>
+        <div class="flex items-center justify-center gap-2 mt-6 text-gray-500 text-sm">
+            <i class="fas fa-calendar-alt text-red-400"></i>
+            <span>تاريخ السريان: ٤ مارس ٢٠٢٦</span>
+            <span class="w-1 h-1 bg-gray-300 rounded-full mx-2"></span>
+            <i class="fas fa-file-shield text-red-400"></i>
+            <span>الإصدار ٢.١</span>
+        </div>
+    </div>
+
+    <!-- quick compliance note (GDPR / Egyptian law) -->
+    <div class="bg-gradient-to-r from-red-700 to-red-800 rounded-3xl shadow-2xl text-white p-8 mb-12 no-print">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 backdrop-blur">
+                    <i class="fas fa-shield-halved text-2xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-1">خصوصيتك تهمنا</h2>
+                    <p class="text-white/90 max-w-2xl">نحن نلتزم بقانون حماية البيانات المصري رقم ١٥١ لسنة ٢٠٢٠ ومعايير اللائحة العامة لحماية البيانات (GDPR) الأوروبية للمرشحين الدوليين.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- two column layout: sticky toc + main policy -->
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12">
+        
+        <!-- table of contents (sticky) -->
+        <aside class="lg:col-span-1 no-print">
+            <div class="sticky top-28 bg-white rounded-2xl shadow-md border border-gray-200 p-6">
+                <h3 class="font-bold text-gray-800 mb-4 flex items-center gap-2"><i class="fas fa-list-ul text-red-600"></i> في هذه الصفحة</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#intro" class="text-gray-600 hover:text-red-700 flex items-center gap-2"><span class="w-1 h-1 bg-red-400 rounded-full"></span>١. مقدمة</a></li>
+                    <li><a href="#data-collect" class="text-gray-600 hover:text-red-700 flex items-center gap-2"><span class="w-1 h-1 bg-red-400 rounded-full"></span>٢. البيانات التي نجمعها</a></li>
+                    <li><a href="#use-data" class="text-gray-600 hover:text-red-700 flex items-center gap-2"><span class="w-1 h-1 bg-red-400 rounded-full"></span>٣. كيفية استخدامنا للبيانات</a></li>
+                    <li><a href="#legal-basis" class="text-gray-600 hover:text-red-700 flex items-center gap-2"><span class="w-1 h-1 bg-red-400 rounded-full"></span>٤. الأساس القانوني</a></li>
+                    <li><a href="#sharing" class="text-gray-600 hover:text-red-700 flex items-center gap-2"><span class="w-1 h-1 bg-red-400 rounded-full"></span>٥. مشاركة البيانات</a></li>
+                    <li><a href="#international" class="text-gray-600 hover:text-red-700 flex items-center gap-2"><span class="w-1 h-1 bg-red-400 rounded-full"></span>٦. النقل الدولي للبيانات</a></li>
+                    <li><a href="#retention" class="text-gray-600 hover:text-red-700 flex items-center gap-2"><span class="w-1 h-1 bg-red-400 rounded-full"></span>٧. الاحتفاظ بالبيانات</a></li>
+                    <li><a href="#rights" class="text-gray-600 hover:text-red-700 flex items-center gap-2"><span class="w-1 h-1 bg-red-400 rounded-full"></span>٨. حقوقك</a></li>
+                    <li><a href="#security" class="text-gray-600 hover:text-red-700 flex items-center gap-2"><span class="w-1 h-1 bg-red-400 rounded-full"></span>٩. التدابير الأمنية</a></li>
+                    <li><a href="#cookies" class="text-gray-600 hover:text-red-700 flex items-center gap-2"><span class="w-1 h-1 bg-red-400 rounded-full"></span>١٠. ملفات تعريف الارتباط</a></li>
+                    <li><a href="#children" class="text-gray-600 hover:text-red-700 flex items-center gap-2"><span class="w-1 h-1 bg-red-400 rounded-full"></span>١١. خصوصية الأطفال</a></li>
+                    <li><a href="#changes" class="text-gray-600 hover:text-red-700 flex items-center gap-2"><span class="w-1 h-1 bg-red-400 rounded-full"></span>١٢. تحديثات السياسة</a></li>
+                    <li><a href="#contact-dpo" class="text-gray-600 hover:text-red-700 flex items-center gap-2"><span class="w-1 h-1 bg-red-400 rounded-full"></span>١٣. الاتصال / مسؤول حماية البيانات</a></li>
+                </ul>
+                <hr class="my-4">
+                <div class="bg-gray-50 p-3 rounded-xl">
+                    <p class="text-xs text-gray-500 flex items-start gap-2"><i class="fas fa-check-circle text-green-600 mt-0.5"></i> VFSA مسجلة لدى جهاز حماية البيانات الشخصية المصري (رقم التسجيل: DPA-EG-2025-078).</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main privacy policy content (expanded, professional) -->
+        <div class="lg:col-span-3 space-y-8">
+            
+            <!-- 1. Introduction -->
+            <section id="intro" class="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 scroll-mt-28 hover-lift transition">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="w-10 h-10 rounded-full bg-red-100 text-red-700 font-bold flex items-center justify-center">١</span>
+                    <h2 class="text-2xl font-bold text-gray-800">مقدمة</h2>
+                </div>
+                <div class="pr-14 text-gray-700 space-y-3"> <!-- Changed pl-14 to pr-14 -->
+                    <p><span class="font-semibold">شركة VFSA للتوظيف الخارجي</span> ("VFSA"، "نحن"، "لنا"، "خاصتنا") ملتزمة بحماية خصوصيتك. تشرح سياسة الخصوصية هذه كيف نقوم بجمع واستخدام والإفصاح عن وحماية معلوماتك عند استخدامك لموقعنا الإلكتروني أو خدمات التوظيف أو التواصل معنا.</p>
+                    <p>نحن نعمل كـ <span class="font-semibold">مراقب بيانات</span> للبيانات الشخصية للعمال وممثلي أصحاب العمل. مكتبنا المسجل يقع في ٢٤ شارع التحرير، وسط البلد، القاهرة، مصر.</p>
+                    <p class="bg-amber-50 p-4 rounded-xl text-amber-800 text-sm flex items-start gap-2"><i class="fas fa-circle-info mt-0.5 text-amber-600"></i> يرجى قراءة هذه السياسة بعناية. باستخدامك لخدماتنا، فإنك تقر بالممارسات الموضحة هنا.</p>
+                </div>
+            </section>
+
+            <!-- 2. Data we collect (with table) -->
+            <section id="data-collect" class="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 scroll-mt-28 hover-lift transition">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="w-10 h-10 rounded-full bg-red-100 text-red-700 font-bold flex items-center justify-center">٢</span>
+                    <h2 class="text-2xl font-bold text-gray-800">المعلومات التي نجمعها</h2>
+                </div>
+                <div class="pr-14"> <!-- Changed pl-14 to pr-14 -->
+                    <p class="mb-4 text-gray-700">قد نقوم بجمع الفئات التالية من البيانات الشخصية:</p>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-right text-gray-700 data-table">
+                            <thead class="bg-gray-100 text-gray-800">
+                                <tr>
+                                    <th class="px-4 py-3 rounded-r-lg">الفئة</th> <!-- Switched order for RTL -->
+                                    <th class="px-4 py-3 rounded-l-lg">أمثلة</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td class="px-4 py-3 font-medium">بيانات الهوية</td><td class="px-4 py-3">الاسم الكامل، تاريخ الميلاد، الجنسية، رقم جواز السفر، بطاقة الهوية</td></tr>
+                                <tr><td class="px-4 py-3 font-medium">بيانات الاتصال</td><td class="px-4 py-3">عنوان البريد الإلكتروني، رقم الهاتف، العنوان الفعلي</td></tr>
+                                <tr><td class="px-4 py-3 font-medium">بيانات مهنية</td><td class="px-4 py-3">السيرة الذاتية، تاريخ العمل، المؤهلات، المهارات، خطابات التوصية، اللغات</td></tr>
+                                <tr><td class="px-4 py-3 font-medium">بيانات التوظيف</td><td class="px-4 py-3">التفضيلات الوظيفية، الراتب المطلوب، أوقات التوفر، ملاحظات المقابلة</td></tr>
+                                <tr><td class="px-4 py-3 font-medium">بيانات تقنية</td><td class="px-4 py-3">عنوان IP، نوع المتصفح، معلومات الجهاز، ملفات تعريف الارتباط، أنماط الاستخدام</td></tr>
+                                <tr><td class="px-4 py-3 font-medium">بيانات حساسة*</td><td class="px-4 py-3">فقط بموافقة صريحة: اللياقة الطبية لبعض الأدوار، فحوصات السجل الجنائي (إذا تطلبها القانون)</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-3">* تتم معالجة البيانات الحساسة فقط عندما يكون ذلك ضروريًا للامتثال للوائح التوظيف الخارجي.</p>
+                </div>
+            </section>
+
+            <!-- 3. How we use data -->
+            <section id="use-data" class="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 scroll-mt-28 hover-lift transition">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="w-10 h-10 rounded-full bg-red-100 text-red-700 font-bold flex items-center justify-center">٣</span>
+                    <h2 class="text-2xl font-bold text-gray-800">كيف نستخدم معلوماتك</h2>
+                </div>
+                <div class="pr-14 text-gray-700 space-y-3"> <!-- Changed pl-14 to pr-14 -->
+                    <p>نستخدم بياناتك الشخصية للأغراض التالية:</p>
+                    <ul class="list-disc list-inside space-y-2 marker:text-red-600">
+                        <li><span class="font-semibold">خدمات التوظيف:</span> مطابقة المرشحين مع أصحاب العمل، ترتيب المقابلات، وتسهيل التعيينات.</li>
+                        <li><span class="font-semibold">الاتصال:</span> الرد على الاستفسارات، إرسال تنبيهات الوظائف، وتقديم تحديثات حول الطلبات.</li>
+                        <li><span class="font-semibold">التحقق:</span> التدقيق في المؤهلات، خطابات التوصية، والأهلية لأدوار محددة.</li>
+                        <li><span class="font-semibold">الامتثال القانوني:</span> الوفاء بالالتزامات بموجب قوانين العمل، متطلبات التأشيرة، وإجراءات مكافحة الاحتيال.</li>
+                        <li><span class="font-semibold">التحسين:</span> تحليل استخدام الموقع لتعزيز تجربة المستخدم وجودة الخدمة.</li>
+                        <li><span class="font-semibold">التسويق:</span> بموافقتك، إرسال النشرات الإخبارية أو المواد الترويجية (يمكنك إلغاء الاشتراك في أي وقت).</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 4. Legal basis (GDPR / Law 151) -->
+            <section id="legal-basis" class="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 scroll-mt-28 hover-lift transition">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="w-10 h-10 rounded-full bg-red-100 text-red-700 font-bold flex items-center justify-center">٤</span>
+                    <h2 class="text-2xl font-bold text-gray-800">الأساس القانوني للمعالجة</h2>
+                </div>
+                <div class="pr-14 text-gray-700 space-y-3"> <!-- Changed pl-14 to pr-14 -->
+                    <p>بموجب قانون حماية البيانات المصري رقم ١٥١ لسنة ٢٠٢٠ واللائحة العامة لحماية البيانات (GDPR) (للمقيمين في الاتحاد الأوروبي)، نعتمد على الأسس القانونية التالية:</p>
+                    <div class="grid gap-3 mt-2">
+                        <div class="bg-gray-50 p-4 rounded-xl flex gap-3">
+                            <span class="font-bold text-red-600">العقد:</span> المعالجة ضرورية لتنفيذ اتفاقية التوظيف.
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-xl flex gap-3">
+                            <span class="font-bold text-red-600">الالتزام القانوني:</span> الامتثال لقوانين العمل أو الهجرة أو الضرائب.
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-xl flex gap-3">
+                            <span class="font-bold text-red-600">المصالح المشروعة:</span> تحسين الخدمات، منع الاحتيال، أمن الشبكة.
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-xl flex gap-3">
+                            <span class="font-bold text-red-600">الموافقة:</span> للتسويق والبيانات الحساسة وملفات تعريف الارتباط حيثما يكون ذلك مطلوبًا.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Data sharing -->
+            <section id="sharing" class="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 scroll-mt-28 hover-lift transition">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="w-10 h-10 rounded-full bg-red-100 text-red-700 font-bold flex items-center justify-center">٥</span>
+                    <h2 class="text-2xl font-bold text-gray-800">مشاركة البيانات والإفصاح</h2>
+                </div>
+                <div class="pr-14 text-gray-700 space-y-4"> <!-- Changed pl-14 to pr-14 -->
+                    <p>قد نشارك معلوماتك مع:</p>
+                    <ul class="list-disc list-inside">
+                        <li><span class="font-semibold">أصحاب العمل:</span> أصحاب العمل المحتملين كجزء من عملية التوظيف.</li>
+                        <li><span class="font-semibold">مقدمو الخدمات:</span> استضافة تكنولوجيا المعلومات، وكالات فحص الخلفية، مستشارو التأشيرات (بموجب اتفاقيات صارمة لمعالجة البيانات).</li>
+                        <li><span class="font-semibold">السلطات الحكومية:</span> عندما يقتضي القانون ذلك (مثل وزارة القوى العاملة، دائرة الهجرة).</li>
+                        <li><span class="font-semibold">المستشارون المهنيون:</span> المحامون، المدققون لأغراض تجارية مشروعة.</li>
+                    </ul>
+                    <p class="text-sm bg-gray-100 p-3 rounded-lg"><i class="fas fa-handshake text-red-600 ml-2"></i>نحن لا نبيع بياناتك الشخصية أبدًا لأطراف ثالثة لأغراض التسويق.</p>
+                </div>
+            </section>
+
+            <!-- 6. International transfers -->
+            <section id="international" class="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 scroll-mt-28 hover-lift transition">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="w-10 h-10 rounded-full bg-red-100 text-red-700 font-bold flex items-center justify-center">٦</span>
+                    <h2 class="text-2xl font-bold text-gray-800">النقل الدولي للبيانات</h2>
+                </div>
+                <div class="pr-14 text-gray-700 space-y-3"> <!-- Changed pl-14 to pr-14 -->
+                    <p>كشركة توظيف خارجي، نقوم بنقل البيانات بشكل متكرر إلى دول خارج مصر (مثل دول الخليج، الاتحاد الأوروبي). نضمن وجود ضمانات مناسبة:</p>
+                    <ul class="list-disc list-inside">
+                        <li>النقل فقط إلى الدول التي لديها قوانين كافية لحماية البيانات (قرارات ملاءمة الاتحاد الأوروبي).</li>
+                        <li>استخدام بنود العقد القياسية (SCCs) المعتمدة من المفوضية الأوروبية.</li>
+                        <li>الحصول على موافقتك الصريحة عند الحاجة.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 7. Data retention -->
+            <section id="retention" class="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 scroll-mt-28 hover-lift transition">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="w-10 h-10 rounded-full bg-red-100 text-red-700 font-bold flex items-center justify-center">٧</span>
+                    <h2 class="text-2xl font-bold text-gray-800">الاحتفاظ بالبيانات</h2>
+                </div>
+                <div class="pr-14 text-gray-700 space-y-3"> <!-- Changed pl-14 to pr-14 -->
+                    <p>نحن نحتفظ ببياناتك الشخصية فقط طالما كان ذلك ضروريًا للأغراض الموضحة في هذه السياسة، أو وفقًا لما يقتضيه القانون:</p>
+                    <ul class="list-disc list-inside">
+                        <li>ملفات المرشحين: ٥ سنوات بعد آخر نشاط (أو حتى طلب الحذف).</li>
+                        <li>سجلات التعيين: ١٠ سنوات (لأغراض قانونية وتعاقدية).</li>
+                        <li>سجلات الاتصال: سنتان.</li>
+                    </ul>
+                    <p>بعد انتهاء فترة الاحتفاظ، يتم حذف البيانات بشكل آمن أو إخفاء هويتها.</p>
+                </div>
+            </section>
+
+            <!-- 8. Your rights -->
+            <section id="rights" class="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 scroll-mt-28 hover-lift transition">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="w-10 h-10 rounded-full bg-red-100 text-red-700 font-bold flex items-center justify-center">٨</span>
+                    <h2 class="text-2xl font-bold text-gray-800">حقوق الخصوصية الخاصة بك</h2>
+                </div>
+                <div class="pr-14 text-gray-700 space-y-3"> <!-- Changed pl-14 to pr-14 -->
+                    <p>اعتمادًا على ولايتك القضائية، قد تكون لديك الحقوق التالية:</p>
+                    <div class="grid sm:grid-cols-2 gap-2 mt-2">
+                        <div class="border p-3 rounded-lg flex items-start gap-2"><i class="fas fa-check-circle text-green-600 mt-1"></i> الحق في الوصول</div>
+                        <div class="border p-3 rounded-lg flex items-start gap-2"><i class="fas fa-check-circle text-green-600 mt-1"></i> الحق في التصحيح</div>
+                        <div class="border p-3 rounded-lg flex items-start gap-2"><i class="fas fa-check-circle text-green-600 mt-1"></i> الحق في المحو (الحق في النسيان)</div>
+                        <div class="border p-3 rounded-lg flex items-start gap-2"><i class="fas fa-check-circle text-green-600 mt-1"></i> الحق في تقييد المعالجة</div>
+                        <div class="border p-3 rounded-lg flex items-start gap-2"><i class="fas fa-check-circle text-green-600 mt-1"></i> الحق في إمكانية نقل البيانات</div>
+                        <div class="border p-3 rounded-lg flex items-start gap-2"><i class="fas fa-check-circle text-green-600 mt-1"></i> الحق في الاعتراض (بما في ذلك التسويق)</div>
+                        <div class="border p-3 rounded-lg flex items-start gap-2"><i class="fas fa-check-circle text-green-600 mt-1"></i> الحق في سحب الموافقة</div>
+                        <div class="border p-3 rounded-lg flex items-start gap-2"><i class="fas fa-check-circle text-green-600 mt-1"></i> الحق في تقديم شكوى</div>
+                    </div>
+                    <p class="mt-3">لممارسة حقوقك، اتصل بنا على <span class="text-red-600">privacy@vfsa-employment.com</span>. نرد خلال ٣٠ يومًا.</p>
+                </div>
+            </section>
+
+            <!-- 9. Security measures -->
+            <section id="security" class="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 scroll-mt-28 hover-lift transition">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="w-10 h-10 rounded-full bg-red-100 text-red-700 font-bold flex items-center justify-center">٩</span>
+                    <h2 class="text-2xl font-bold text-gray-800">أمن البيانات</h2>
+                </div>
+                <div class="pr-14 text-gray-700 space-y-3"> <!-- Changed pl-14 to pr-14 -->
+                    <p>نقوم بتنفيذ تدابير تقنية وتنظيمية مناسبة، بما في ذلك:</p>
+                    <ul class="list-disc list-inside">
+                        <li>التشفير (SSL/TLS) للبيانات أثناء النقل.</li>
+                        <li>ضوابط الوصول والمصادقة.</li>
+                        <li>تدقيقات أمنية منتظمة وتدريب للموظفين.</li>
+                        <li>مراكز بيانات آمنة مع شهادة ISO 27001.</li>
+                    </ul>
+                    <p>ومع ذلك، لا توجد طريقة لنقل البيانات عبر الإنترنت آمنة بنسبة ١٠٠٪. أنت تشارك المعلومات على مسؤوليتك الخاصة.</p>
+                </div>
+            </section>
+
+            <!-- 10. Cookies -->
+            <section id="cookies" class="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 scroll-mt-28 hover-lift transition">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="w-10 h-10 rounded-full bg-red-100 text-red-700 font-bold flex items-center justify-center">١٠</span>
+                    <h2 class="text-2xl font-bold text-gray-800">ملفات تعريف الارتباط والتتبع</h2>
+                </div>
+                <div class="pr-14 text-gray-700 space-y-3"> <!-- Changed pl-14 to pr-14 -->
+                    <p>يستخدم موقعنا الإلكتروني ملفات تعريف الارتباط لتعزيز الوظائف وتحليل حركة المرور. تشمل الأنواع:</p>
+                    <ul class="list-disc list-inside">
+                        <li><span class="font-semibold">أساسية:</span> لتسجيل الدخول والأمان.</li>
+                        <li><span class="font-semibold">وظيفية:</span> تذكر التفضيلات.</li>
+                        <li><span class="font-semibold">تحليلية:</span> Google Analytics (مع إخفاء عنوان IP).</li>
+                        <li><span class="font-semibold">تسويقية:</span> فقط بموافقة.</li>
+                    </ul>
+                    <p>يمكنك إدارة تفضيلات ملفات تعريف الارتباط عبر إعدادات المتصفح الخاص بك. انظر <a href="#" class="text-red-600 underline">سياسة ملفات تعريف الارتباط</a> الخاصة بنا للتفاصيل.</p>
+                </div>
+            </section>
+
+            <!-- 11. Children's privacy -->
+            <section id="children" class="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 scroll-mt-28 hover-lift transition">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="w-10 h-10 rounded-full bg-red-100 text-red-700 font-bold flex items-center justify-center">١١</span>
+                    <h2 class="text-2xl font-bold text-gray-800">خصوصية الأطفال</h2>
+                </div>
+                <div class="pr-14 text-gray-700"> <!-- Changed pl-14 to pr-14 -->
+                    <p>خدماتنا ليست موجهة للأفراد الذين تقل أعمارهم عن ٢١ عامًا. لا نقوم عن قصد بجمع بيانات من القاصرين. إذا أصبحت على علم بأن طفلاً قد قدم لنا بيانات شخصية، فاتصل بنا فورًا.</p>
+                </div>
+            </section>
+
+            <!-- 12. Policy updates -->
+            <section id="changes" class="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 scroll-mt-28 hover-lift transition">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="w-10 h-10 rounded-full bg-red-100 text-red-700 font-bold flex items-center justify-center">١٢</span>
+                    <h2 class="text-2xl font-bold text-gray-800">التغييرات في هذه السياسة</h2>
+                </div>
+                <div class="pr-14 text-gray-700"> <!-- Changed pl-14 to pr-14 -->
+                    <p>قد نقوم بتحديث سياسة الخصوصية هذه بشكل دوري. يشير تاريخ "السريان" في الأعلى إلى أحدث مراجعة. سيتم الإخطار بالتغييرات الجوهرية عبر البريد الإلكتروني أو إشعار على الموقع.</p>
+                </div>
+            </section>
+
+            <!-- 13. Contact / DPO -->
+            <section id="contact-dpo" class="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 scroll-mt-28 hover-lift transition">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="w-10 h-10 rounded-full bg-red-100 text-red-700 font-bold flex items-center justify-center">١٣</span>
+                    <h2 class="text-2xl font-bold text-gray-800">الاتصال ومسؤول حماية البيانات</h2>
+                </div>
+                <div class="pr-14 text-gray-700 space-y-4"> <!-- Changed pl-14 to pr-14 -->
+                    <p>للاستفسارات المتعلقة بالخصوصية، أو لممارسة حقوقك، اتصل بمسؤول حماية البيانات لدينا:</p>
+                    <div class="bg-gray-100 p-5 rounded-xl grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <p class="font-bold text-red-800">VFSA للتوظيف الخارجي</p>
+                            <p class="text-sm">للسيد/ مسؤول حماية البيانات<br>٢٤ شارع التحرير، وسط البلد<br>القاهرة، مصر</p>
+                        </div>
+                        <div>
+                            <p><i class="fas fa-envelope w-6 text-red-600"></i> dpo@vfsa-employment.com</p>
+                            <p><i class="fas fa-phone-alt w-6 text-red-600"></i> +20 2 1234 5678 (الرقم الداخلي ٤٠١)</p>
+                            <p><i class="fas fa-globe w-6 text-red-600"></i> www.vfsa-employment.com/privacy</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-600">لديك أيضًا الحق في تقديم شكوى إلى جهاز حماية البيانات الشخصية المصري (IDPC) أو سلطتك الإشرافية المحلية.</p>
+                </div>
+            </section>
+
+            <!-- final acknowledgment -->
+            <div class="bg-gradient-to-r from-gray-100 to-gray-50 p-8 rounded-2xl border border-gray-300 text-center">
+                <i class="fas fa-shield-heart text-red-600 text-3xl mb-3"></i>
+                <p class="text-gray-700 text-lg">VFSA ملتزمة بحماية خصوصيتك. نحن نعالج بياناتك بشكل عادل وقانوني وشفاف.</p>
+                <div class="flex flex-wrap gap-3 justify-center mt-4 no-print">
+                    <button class="px-6 py-2 bg-red-600 text-white rounded-full text-sm font-semibold hover:bg-red-700 transition">أنا أفهم</button>
+                    <button class="px-6 py-2 border border-gray-300 rounded-full text-sm font-semibold hover:bg-gray-100 transition">طباعة نسخة</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- ======== FOOTER ======== -->
+<footer class="bg-gray-900 text-white/70 py-10 mt-12 no-print">
+    <div class="container mx-auto px-4 text-center">
+        <div class="flex flex-wrap justify-center gap-6 text-sm mb-4">
+            <a href="#" class="hover:text-white transition">شروط الخدمة</a>
+            <a href="#" class="hover:text-white transition">إشعار ملفات تعريف الارتباط</a>
+            <a href="#" class="hover:text-white transition">إمكانية الوصول</a>
+            <a href="#" class="hover:text-white transition">خريطة الموقع</a>
+        </div>
+        <p>© ٢٠٢٦ شركة VFSA للتوظيف الخارجي. جميع الحقوق محفوظة.</p>
+        <p class="text-xs mt-2">مسجلة لدى جهاز حماية البيانات الشخصية المصري (رقم: DPA-EG-2025-078) · الترخيص رقم MOM/2025/789</p>
+    </div>
+</footer>
+
+<!-- back-to-top button -->
+<button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="no-print fixed bottom-8 left-8 bg-red-600 text-white w-12 h-12 rounded-full shadow-xl flex items-center justify-center hover:bg-red-700 transition z-40">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+</body>
+</html>
